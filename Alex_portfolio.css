@@ -1,0 +1,439 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+p {
+    color:rgb(0,0,0);
+}
+a {
+    color: black;
+}
+a,.btn {
+    transition: all 300ms ease;
+}
+
+#desktop-nav {
+    overflow-x:hidden;
+}
+
+nav, .nav-links {
+    display:flex;
+}
+
+nav {
+    position:fixed;
+    justify-content: space-between;
+    align-items: center;
+    height:10vh;
+    width:100%;
+    background-color: rgb(220, 78, 35);
+}
+
+.nav-links {
+    gap:2rem;
+    list-style: none;
+    font-size:1.2rem;
+    font-family:'Jost',sans-serif;
+    font-weight: 800;
+    padding-right: 1em;
+    text-transform:uppercase;
+    flex-wrap: wrap;
+}
+.nav-links li {
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color:white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color:black;
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+}
+ 
+.logo {
+    margin-right:2em;
+    padding-left:1.5em;
+}
+
+.main-content {
+    width: 100%;
+}
+
+section {
+    width:fit-content;
+    box-sizing: border-box;
+    min-height: fit-content;
+    min-width: fit-content;
+    border-bottom: 2px solid grey;
+}
+
+.section-container {
+    display: flex;
+
+}
+
+.content {
+    height:98vh;
+    width:100%;
+}
+
+#profile {
+    display:flex;
+    justify-content: center;
+    gap:5rem;
+    height:98vh;
+    width:100%;
+}
+#Education {
+    height:55em;
+    width:100%;
+
+}
+
+.section_pic-container img {
+    display:flex;
+    height:400px;
+    width:400px;
+    margin:10em 12em auto auto;
+    border:  5px solid rgba(220,78,35,0.8) ;
+    border-radius: 50%;
+    
+}
+.section_text {
+    margin:0;
+    padding-top:4em;
+    padding-left: 5em;
+    align-self: center;
+    text-align: justify;
+
+}
+
+.section_text h2 {
+    font-family:'REM',sans-serif;
+    font-size:3.8rem;
+    letter-spacing:0.05em;
+}
+
+.section_text .color-name {
+    color:rgb(220,78,35);
+}
+.section_text p {
+    font-family: 'Belanosima',sans-serif;
+    font-size: 1.1em;
+    padding-bottom: 0.3rem;
+    width:60%;
+}
+
+#social-media {
+    display:flex;
+    margin-top:1rem;
+    gap:1.3rem;
+}
+#social-media a:hover{
+    color:rgb(220,78,35);
+}
+
+#Education h2,#Skills h2,#Projects h2,#Contact h2 {
+    font-family:  'REM', sans-serif;
+    font-size: 3em;
+    font-weight: 1000;
+    text-transform:uppercase;
+    margin:auto auto 1em 2em;
+    padding-top:2em;
+
+}
+
+
+.Education {
+    padding:2em 5em;
+}
+
+.Education:hover,.Education:hover p{
+    background-color:rgb(220, 78, 35);
+    color:white;
+
+}
+.Education-heading {
+    display:flex;
+    justify-content:space-between;
+    align-items:center ;
+    font-family:'Belanosima', sans-serif;
+}
+
+.Education-timing p {
+    color:rgb(220, 78, 35);
+}
+
+.Education-title {
+    margin-bottom: 0.5em;
+}
+
+.Education-institution,.Education-location, .Education-grade{
+    margin:0 auto;
+    font-family: 'Jost',sans-serif;
+}
+
+#Skills {
+    min-height:70em;
+    max-height: fit-content;
+    width:100%;
+}
+#Skills h3 {
+    font-family: 'REM', sans-serif;
+    font-size: 1.5em;
+    margin:2em 0;
+    
+}
+
+
+.skill-section {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    width:80%;
+    margin:0 auto;
+}
+
+.skill-set {
+    border: 2px solid black;
+    padding:2em 2em 0.5em 0.5em;
+    min-height:fit-content;
+    margin-right:1em;
+    margin-bottom:1em;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.2), 
+    0px 2px 4px rgba(0,0,0,0.3), 
+    0px 4px 8px rgba(0,0,0,0.4), 
+    0px 8px 16px rgba(0,0,0,0.5);
+   
+}
+.skill-set:hover,.skill-set:hover span,.skill-set:hover p {
+    background-color:rgb(220, 78, 35);
+    color:white;
+}
+
+
+
+.skill-set i {
+    padding-left:1em;
+    padding-bottom:0.5em;
+}
+.skill-set i span {
+    font-family:'Jost', sans-serif ;
+    padding: 0 0.5em;
+    font-size: 1em;
+    font-weight: 1000;
+    letter-spacing:0.19em;
+}
+
+.skill-set i .C {
+    padding-left:2em;
+    font-size: 0.59em;
+    font-weight: 1000;
+
+}
+
+.skill-set p {
+    font-family: 'Belanosima',sans-serif;
+    font-size: 1.5em;
+    padding: 1rem ;
+    width:100%;
+}
+
+#Projects {
+    height:70em;
+    max-height: fit-content;
+    
+}
+
+.project-section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:80%;
+    margin:0 auto;
+}
+.project-image {
+    padding:0 auto;
+    margin:0 auto;
+    text-align: center;
+}
+.project {
+    border: 2px solid black;
+    padding:2em 2em 0.5em 0.5em;
+    min-height:fit-content;
+    margin-right:2em;
+    margin-bottom:1em;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.2), 
+    0px 2px 4px rgba(0,0,0,0.3), 
+    0px 4px 8px rgba(0,0,0,0.4), 
+    0px 8px 16px rgba(0,0,0,0.5);
+}
+
+.project .project-title {
+    font-family:'Jost', sans-serif ;
+    padding: 0.5em 0.5em;
+    font-size: 1.5em;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.project .project-info p {
+    font-family: 'Belanosima',sans-serif;
+    font-size: 1.3em;
+    padding: 1rem ;
+    width:100%;
+    color:rgb(61, 58, 58);
+
+}
+
+.project .project-link {    
+    margin:0.5em auto;
+    padding:0.5em;
+    border:3px solid black;
+    border-radius:15%;
+    width:fit-content;
+}
+
+.project:hover {
+    background-color:rgb(220, 78, 35);
+}
+.project .project-link:hover {
+    background-color:blue;
+}
+
+#Contact {
+    min-height:45em;
+    border-bottom: none;
+}
+
+.contact-info h3 span {
+    color:rgb(220, 78, 35);
+}
+.contact-info {
+    padding: 4em;
+    border: 2px solid black;
+    width:fit-content;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.2), 
+    0px 2px 4px rgba(0,0,0,0.3), 
+    0px 4px 8px rgba(0,0,0,0.4), 
+    0px 8px 16px rgba(0,0,0,0.5);
+}
+
+.contact-info p {
+    font-family:'REM',sans-serif;
+    font-size: 1.2em;
+    font-weight: 1000;
+}
+
+.contact-info h3 {
+    font-family:'Jost', sans-serif ;
+    padding: 0 0.5em;
+    font-size: 3.5em;
+    font-weight: 1000;
+    letter-spacing:0.19em;
+
+}
+
+.contact-details {
+    font-size: 1.5rem;
+    margin-top:2rem;
+    display:grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr ;
+    justify-content: space-between;
+    align-items: center;
+    column-gap:10rem;
+    row-gap:4rem;   
+}
+.contact-mode span {
+    font-family:'Belanosima',sans-serif;
+    margin-left:1.5em;
+}
+
+.contact-mode a:hover {
+    color:rgb(220, 78, 35);
+}
+
+@media screen and (max-width:400px)
+{
+    #Education {
+        min-height:150vh;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        height: fit-content;
+        padding-top:0.5em;
+        padding-bottom: 0.5em;
+        flex-direction:column ;
+        overflow:visible;
+    }
+    .nav-links {
+        gap:1.5em;
+        font-size:0.9rem;
+    }
+
+    #profile {
+        min-height:110vh;
+    }
+
+    #Education {
+        min-height:120vh;
+    }
+
+    #Skills {
+        min-height:200vh;
+    }
+
+    #Projects {
+        min-height:50em;
+    }
+
+}
+@media screen and (max-width:1250px)
+{
+
+    #Education {
+        min-height:110vh;
+    }
+    #Skills {
+        min-height:190vh;
+    }
+
+    #Projects {
+        min-height:100vh;
+    }
+}
+
+@media screen and (max-width:1200px)
+{
+    #profile {
+        min-height:110vh;
+
+    }
+
+    #Skills {
+        min-height:300vh;
+    }
+    #Projects {
+        min-height:190vh;
+    }
+}
